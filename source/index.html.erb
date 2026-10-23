@@ -1,20 +1,18 @@
 ---
 title: xSDR64 – Bild anklicken, Funktion verstehen
 ---
-<header class="kopf">
-  <p class="kennung">DD5MD</p>
-  <h1>xSDR64</h1>
-  <p class="unter">Die Mac-Software für das FlexRadio, Schritt für Schritt erklärt. Klicke auf die nummerierten Punkte im Bild.</p>
-  <p class="entwurf">Entwurf: Die Texte sind noch nicht geprüft.</p>
-  <label class="schalter"><input type="checkbox" id="punkte-aus"> Punkte ausblenden</label>
-</header>
+<div class="leiste">
+  <div class="leiste-titel"><span class="kennung">DD5MD</span> <strong>xSDR64</strong> <span class="leiste-unter">erklärt</span></div>
+  <span class="entwurf" title="Die Texte sind noch nicht geprüft">Entwurf</span>
+  <div class="leiste-knoepfe">
+    <button type="button" id="rundgang">▶ Rundgang</button>
+    <button type="button" id="liste-auf">☰ Alle Punkte</button>
+    <label class="schalter"><input type="checkbox" id="punkte-aus"> Punkte aus</label>
+  </div>
+</div>
 
 <main>
   <% ansichten.each do |a| %>
     <%= partial 'components/ansicht', locals: { ansicht: a } %>
   <% end %>
 </main>
-
-<footer class="fuss">
-  <p>xSDR64 von Mathias, DD5MD. FlexRadio ist eine Marke von FlexRadio Systems, Inc.</p>
-</footer>
