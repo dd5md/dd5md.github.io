@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= current_page.data.title || 'xSDR64 – Erklärt' %></title>
+  <meta name="description" content="Interaktive Erklärung der Mac-Software xSDR64 für FlexRadio: Bild anklicken, Funktion erklärt bekommen.">
+  <%= stylesheet_link_tag 'site' %>
+</head>
+<body>
+  <%= yield %>
+  <%= javascript_include_tag 'site', defer: true %>
+</body>
+</html>

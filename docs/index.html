@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xSDR64 – Bild anklicken, Funktion verstehen</title>
+  <meta name="description" content="Interaktive Erklärung der Mac-Software xSDR64 für FlexRadio: Bild anklicken, Funktion erklärt bekommen.">
+  <link href="stylesheets/site.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="kopf">
+  <p class="kennung">DD5MD</p>
+  <h1>xSDR64</h1>
+  <p class="unter">Die Mac-Software für das FlexRadio, Schritt für Schritt erklärt. Klicke auf die nummerierten Punkte im Bild.</p>
+  <p class="entwurf">Entwurf: Die Texte sind noch nicht geprüft.</p>
+  <label class="schalter"><input type="checkbox" id="punkte-aus"> Punkte ausblenden</label>
+</header>
+
+<main>
+    <section class="ansicht" id="hauptfenster" data-ansicht="hauptfenster">
+  <header class="ansicht-kopf">
+    <h2>Hauptfenster</h2>
+    <p>Alles auf einen Blick. Ein Klick auf die Punkte zeigt die Erklärung.</p>
+  </header>
+
+  <div class="buehne">
+    <div class="bild-scroll">
+    <figure class="bild" style="aspect-ratio: 2400 / 1504">
+      <img src="images/hauptfenster-audiokette.webp" alt="Hauptfenster von xSDR64 mit Audiokette, Spektrum, Wasserfall und Seitenleisten" width="2400" height="1504" loading="lazy" />
+        <button type="button" class="hotspot" style="left:5.5%;top:4.7%"
+                data-nr="1" data-gruppe="Kopfleiste"
+                aria-label="Lautstärke und Kopfhörer"><span>1</span></button>
+        <button type="button" class="hotspot" style="left:18.1%;top:4.7%"
+                data-nr="2" data-gruppe="Kopfleiste"
+                aria-label="Zahnrad: Audio-Einstellungen"><span>2</span></button>
+        <button type="button" class="hotspot" style="left:20.3%;top:4.7%"
+                data-nr="3" data-gruppe="Kopfleiste"
+                aria-label="Aufnahme"><span>3</span></button>
+        <button type="button" class="hotspot" style="left:22.8%;top:4.7%"
+                data-nr="4" data-gruppe="Kopfleiste"
+                aria-label="Wiedergabe"><span>4</span></button>
+        <button type="button" class="hotspot" style="left:27.2%;top:4.7%"
+                data-nr="5" data-gruppe="Kopfleiste"
+                aria-label="Statuslampen"><span>5</span></button>
+        <button type="button" class="hotspot" style="left:32.5%;top:4.7%"
+                data-nr="6" data-gruppe="Kopfleiste"
+                aria-label="ACOM-Endstufe"><span>6</span></button>
+        <button type="button" class="hotspot" style="left:53.8%;top:4.7%"
+                data-nr="7" data-gruppe="Kopfleiste"
+                aria-label="Frequenz und Betriebsart"><span>7</span></button>
+        <button type="button" class="hotspot" style="left:80.5%;top:4.7%"
+                data-nr="8" data-gruppe="Kopfleiste"
+                aria-label="Global-Profil"><span>8</span></button>
+        <button type="button" class="hotspot" style="left:91.5%;top:4.7%"
+                data-nr="9" data-gruppe="Kopfleiste"
+                aria-label="Audio: Radio oder Mac"><span>9</span></button>
+        <button type="button" class="hotspot" style="left:97.4%;top:4.7%"
+                data-nr="10" data-gruppe="Kopfleiste"
+                aria-label="Trennen"><span>10</span></button>
+        <button type="button" class="hotspot" style="left:11.5%;top:8.5%"
+                data-nr="11" data-gruppe="Audiokette"
+                aria-label="Settings, Kette, Stop"><span>11</span></button>
+        <button type="button" class="hotspot" style="left:11.5%;top:16.0%"
+                data-nr="12" data-gruppe="Audiokette"
+                aria-label="Eingang der Kette"><span>12</span></button>
+        <button type="button" class="hotspot" style="left:11.5%;top:25.5%"
+                data-nr="13" data-gruppe="Audiokette"
+                aria-label="Plugins in der Kette"><span>13</span></button>
+        <button type="button" class="hotspot" style="left:11.5%;top:44.9%"
+                data-nr="14" data-gruppe="Audiokette"
+                aria-label="Ausgang der Kette"><span>14</span></button>
+        <button type="button" class="hotspot" style="left:11.5%;top:85.8%"
+                data-nr="15" data-gruppe="Audiokette"
+                aria-label="Playback"><span>15</span></button>
+        <button type="button" class="hotspot" style="left:25.7%;top:11.0%"
+                data-nr="16" data-gruppe="Seitenleiste links"
+                aria-label="+RX, +Split, +TNF"><span>16</span></button>
+        <button type="button" class="hotspot" style="left:25.7%;top:31.4%"
+                data-nr="17" data-gruppe="Seitenleiste links"
+                aria-label="Memory-Liste"><span>17</span></button>
+        <button type="button" class="hotspot" style="left:59.5%;top:18.8%"
+                data-nr="18" data-gruppe="Spektrum"
+                aria-label="Slice-Flagge"><span>18</span></button>
+        <button type="button" class="hotspot" style="left:59.5%;top:26.5%"
+                data-nr="19" data-gruppe="Spektrum"
+                aria-label="Marken und Spots"><span>19</span></button>
+        <button type="button" class="hotspot" style="left:52.5%;top:44.7%"
+                data-nr="20" data-gruppe="Spektrum"
+                aria-label="Abstimmen"><span>20</span></button>
+        <button type="button" class="hotspot" style="left:70.8%;top:33.5%"
+                data-nr="21" data-gruppe="Spektrum"
+                aria-label="Slice-Linie und Filter"><span>21</span></button>
+        <button type="button" class="hotspot" style="left:54.5%;top:71.2%"
+                data-nr="22" data-gruppe="Spektrum"
+                aria-label="Bandplan"><span>22</span></button>
+        <button type="button" class="hotspot" style="left:62.0%;top:73.0%"
+                data-nr="23" data-gruppe="Spektrum"
+                aria-label="Frequenzleiste"><span>23</span></button>
+        <button type="button" class="hotspot" style="left:80.5%;top:72.9%"
+                data-nr="24" data-gruppe="Spektrum"
+                aria-label="LIVE"><span>24</span></button>
+        <button type="button" class="hotspot" style="left:54.5%;top:85.4%"
+                data-nr="25" data-gruppe="Spektrum"
+                aria-label="Wasserfall"><span>25</span></button>
+        <button type="button" class="hotspot" style="left:91.5%;top:8.0%"
+                data-nr="26" data-gruppe="Rechte Seitenleiste"
+                aria-label="Blöcke wählen"><span>26</span></button>
+        <button type="button" class="hotspot" style="left:86.0%;top:11.1%"
+                data-nr="27" data-gruppe="Rechte Seitenleiste"
+                aria-label="TX"><span>27</span></button>
+        <button type="button" class="hotspot" style="left:86.0%;top:33.9%"
+                data-nr="28" data-gruppe="Rechte Seitenleiste"
+                aria-label="MIC"><span>28</span></button>
+        <button type="button" class="hotspot" style="left:86.0%;top:56.7%"
+                data-nr="29" data-gruppe="Rechte Seitenleiste"
+                aria-label="RX"><span>29</span></button>
+        <button type="button" class="hotspot" style="left:90.5%;top:75.5%"
+                data-nr="30" data-gruppe="Rechte Seitenleiste"
+                aria-label="AGC-T: AUTO und KAL"><span>30</span></button>
+        <button type="button" class="hotspot" style="left:91.5%;top:87.8%"
+                data-nr="31" data-gruppe="Rechte Seitenleiste"
+                aria-label="Filter"><span>31</span></button>
+        <button type="button" class="hotspot" style="left:5.5%;top:98.5%"
+                data-nr="32" data-gruppe="Statuszeile"
+                aria-label="TNF, DVK, FDX"><span>32</span></button>
+        <button type="button" class="hotspot" style="left:47.0%;top:98.5%"
+                data-nr="33" data-gruppe="Statuszeile"
+                aria-label="Radio-Anzeige"><span>33</span></button>
+        <button type="button" class="hotspot" style="left:92.5%;top:98.5%"
+                data-nr="34" data-gruppe="Statuszeile"
+                aria-label="Sendebereitschaft"><span>34</span></button>
+      <div class="blase" role="dialog" hidden>
+        <button type="button" class="blase-zu" aria-label="Schließen">×</button>
+        <p class="blase-gruppe"></p>
+        <h3 class="blase-titel"></h3>
+        <p class="blase-text"></p>
+      </div>
+    </figure>
+    </div>
+
+    <aside class="liste">
+      <h3>Alle Punkte</h3>
+        <h4>Kopfleiste</h4>
+        <ul>
+            <li><button type="button" class="listenpunkt" data-nr="1"><b>1</b> Lautstärke und Kopfhörer</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="2"><b>2</b> Zahnrad: Audio-Einstellungen</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="3"><b>3</b> Aufnahme</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="4"><b>4</b> Wiedergabe</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="5"><b>5</b> Statuslampen</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="6"><b>6</b> ACOM-Endstufe</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="7"><b>7</b> Frequenz und Betriebsart</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="8"><b>8</b> Global-Profil</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="9"><b>9</b> Audio: Radio oder Mac</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="10"><b>10</b> Trennen</button></li>
+        </ul>
+        <h4>Audiokette</h4>
+        <ul>
+            <li><button type="button" class="listenpunkt" data-nr="11"><b>11</b> Settings, Kette, Stop</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="12"><b>12</b> Eingang der Kette</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="13"><b>13</b> Plugins in der Kette</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="14"><b>14</b> Ausgang der Kette</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="15"><b>15</b> Playback</button></li>
+        </ul>
+        <h4>Seitenleiste links</h4>
+        <ul>
+            <li><button type="button" class="listenpunkt" data-nr="16"><b>16</b> +RX, +Split, +TNF</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="17"><b>17</b> Memory-Liste</button></li>
+        </ul>
+        <h4>Spektrum</h4>
+        <ul>
+            <li><button type="button" class="listenpunkt" data-nr="18"><b>18</b> Slice-Flagge</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="19"><b>19</b> Marken und Spots</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="20"><b>20</b> Abstimmen</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="21"><b>21</b> Slice-Linie und Filter</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="22"><b>22</b> Bandplan</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="23"><b>23</b> Frequenzleiste</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="24"><b>24</b> LIVE</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="25"><b>25</b> Wasserfall</button></li>
+        </ul>
+        <h4>Rechte Seitenleiste</h4>
+        <ul>
+            <li><button type="button" class="listenpunkt" data-nr="26"><b>26</b> Blöcke wählen</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="27"><b>27</b> TX</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="28"><b>28</b> MIC</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="29"><b>29</b> RX</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="30"><b>30</b> AGC-T: AUTO und KAL</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="31"><b>31</b> Filter</button></li>
+        </ul>
+        <h4>Statuszeile</h4>
+        <ul>
+            <li><button type="button" class="listenpunkt" data-nr="32"><b>32</b> TNF, DVK, FDX</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="33"><b>33</b> Radio-Anzeige</button></li>
+            <li><button type="button" class="listenpunkt" data-nr="34"><b>34</b> Sendebereitschaft</button></li>
+        </ul>
+    </aside>
+  </div>
+
+  <script type="application/json" class="hotspot-daten">[{"gruppe":"Kopfleiste","titel":"Lautstärke und Kopfhörer","text":"Zwei Regler: Lautstärke des Lautsprechers und des Kopfhörers am Radio.","x":5.5,"y":4.7},{"gruppe":"Kopfleiste","titel":"Zahnrad: Audio-Einstellungen","text":"Audio-Einstellungen der App, zum Beispiel das Mikrofon vom Flex als Eingang der Audiokette.","x":18.1,"y":4.7},{"gruppe":"Kopfleiste","titel":"Aufnahme","text":"Roter Punkt: Aufnahme starten. Zur Wahl stehen die Audiokette, der Empfang im Radio und die echte Aussendung über einen zweiten Slice. Die Aufnahmezeit läuft als Uhr mit.","x":20.3,"y":4.7},{"gruppe":"Kopfleiste","titel":"Wiedergabe","text":"Spielt die letzte Aufnahme im Radio ab. Rechtsklick: automatisch senden (MOX). Nur an der Blindlast testen.","x":22.8,"y":4.7},{"gruppe":"Kopfleiste","titel":"Statuslampen","text":"Weiß: nicht aktiv. Grün: in Ordnung. Gelb: Abweichung oder Standby. Rot: kritisch.","x":27.2,"y":4.7},{"gruppe":"Kopfleiste","titel":"ACOM-Endstufe","text":"Blitz mit Lampe: Zustand der ACOM-Endstufe. Ein Klick schaltet zwischen Ein, Operate, Standby und Aus (über die Zusatz-App xAcom64).","x":32.5,"y":4.7},{"gruppe":"Kopfleiste","titel":"Frequenz und Betriebsart","text":"Buchstabe des aktiven Slice, seine Frequenz, die Betriebsart und das Band.","x":53.8,"y":4.7},{"gruppe":"Kopfleiste","titel":"Global-Profil","text":"Auswahl des Global-Profils des Radios. Pro Band gibt es ein Profil, das alle Einstellungen des Bandes lädt. Das grüne Symbol daneben speichert das Profil.","x":80.5,"y":4.7},{"gruppe":"Kopfleiste","titel":"Audio: Radio oder Mac","text":"Radio: der Ton kommt aus dem Ausgang des Radios. Mac: der Ton kommt übers Netz auf den Mac.","x":91.5,"y":4.7},{"gruppe":"Kopfleiste","titel":"Trennen","text":"Trennt die Verbindung zum Radio. Die Taste wird rot, wenn die Maus darüber steht.","x":97.4,"y":4.7},{"gruppe":"Audiokette","titel":"Settings, Kette, Stop","text":"Settings öffnet die Einstellungen der Audiokette, „+ Kette“ legt eine weitere Kette an, „Stop“ hält die Verarbeitung an.","x":11.5,"y":8.5},{"gruppe":"Audiokette","titel":"Eingang der Kette","text":"IN: das Gerät, von dem die Kette ihr Mikrofonsignal bekommt, hier ein RME-Interface. Der Stift links vom Zahnrad benennt den Eintrag um, das Zahnrad wählt Gerät und Kanäle.","x":11.5,"y":16.0},{"gruppe":"Audiokette","titel":"Plugins in der Kette","text":"Jede Zeile ist ein Plugin. Das Signal läuft von oben nach unten durch EQ, Kompressor, Verstärkung und Limiter. Die Zahl zeigt den Pegel in dB, der blaue Schalter schaltet das Plugin ein oder aus, das Zahnrad öffnet seine Einstellungen und das Kreuz entfernt es.","x":11.5,"y":25.5},{"gruppe":"Audiokette","titel":"Ausgang der Kette","text":"OUT: das Gerät, an das die Kette ihr bearbeitetes Signal schickt. M und S schalten zwischen Mono und Stereo um, der Lautsprecher schaltet den Ausgang stumm.","x":11.5,"y":44.9},{"gruppe":"Audiokette","titel":"Playback","text":"Aufnahmen der Audiokette anhören: abspielen, in einer Schleife wiederholen oder zum Radio schicken. „Letzte Aufnahme anhören“ spielt die neueste Aufnahme am Mac ab. Zum Flex schicken nur an der Blindlast testen.","x":11.5,"y":85.8},{"gruppe":"Seitenleiste links","titel":"+RX, +Split, +TNF","text":"Neuen Slice anlegen, Split einrichten, neuen TNF (Tracking Notch Filter) setzen.","x":25.7,"y":11.0},{"gruppe":"Seitenleiste links","titel":"Memory-Liste","text":"Ein Klick ruft ein Memory ab. Liegt es auf einem anderen Band, lädt xSDR64 vorher das Global-Profil dieses Bandes.","x":25.7,"y":31.4},{"gruppe":"Spektrum","titel":"Slice-Flagge","text":"Kleine Flagge an der Frequenz des Slice mit Frequenz, S-Meter und den Schaltern NB, NR, ANF, DSP, DAX, RIT, TX, Split und weiteren.","x":59.5,"y":18.8},{"gruppe":"Spektrum","titel":"Marken und Spots","text":"Memories und DX-Spots erscheinen als Schilder über dem Spektrum. Ein Klick auf ein Schild stimmt auf Frequenz, Betriebsart und Filter ab.","x":59.5,"y":26.5},{"gruppe":"Spektrum","titel":"Abstimmen","text":"Ein Klick auf das Spektrum stimmt den Slice auf diese Stelle ab. Mausrad oder Trackpad stimmen schrittweise ab, Ziehen verschiebt die Anzeige.","x":52.5,"y":44.7},{"gruppe":"Spektrum","titel":"Slice-Linie und Filter","text":"Die gelbe Linie ist die Frequenz des Slice, die hellere Fläche daneben der Filter. Die Kanten lassen sich mit der Maus ziehen.","x":70.8,"y":33.5},{"gruppe":"Spektrum","titel":"Bandplan","text":"Der farbige Streifen über der Frequenzleiste zeigt den Bandplan (hier „ALL MODES“). Mit der Maus darüber erscheint eine Erklärung zum Abschnitt.","x":54.5,"y":71.2},{"gruppe":"Spektrum","titel":"Frequenzleiste","text":"Die Frequenzskala. Auf der Leiste nach links oder rechts ziehen ändert den Zoom.","x":62.0,"y":73.0},{"gruppe":"Spektrum","titel":"LIVE","text":"Zeigt, dass der Wasserfall live läuft. Im Streifen rechts am Wasserfall ziehen spult zurück, ein Klick auf LIVE kehrt zur Live-Anzeige zurück.","x":80.5,"y":72.9},{"gruppe":"Spektrum","titel":"Wasserfall","text":"Zeigt über der Zeit, was auf dem Band los ist. Links stehen die Zeitmarken (−5 s, −10 s …).","x":54.5,"y":85.4},{"gruppe":"Rechte Seitenleiste","titel":"Blöcke wählen","text":"TX, MIC, PHNE, RX und xTUNE blenden die jeweiligen Blöcke ein oder aus.","x":91.5,"y":8.0},{"gruppe":"Rechte Seitenleiste","titel":"TX","text":"Sendeleistung und SWR, TX-Profil, RF Power, Tune Power sowie die Tasten TUNE, MOX und ATU.","x":86.0,"y":11.1},{"gruppe":"Rechte Seitenleiste","titel":"MIC","text":"Mikrofonpegel und Kompression, Mic-Profil, Eingang, Mithören (MON) und die Taste „Audiokette“.","x":86.0,"y":33.9},{"gruppe":"Rechte Seitenleiste","titel":"RX","text":"Slice, Antenne, Betriebsart, Frequenz, Abstimmschritt, Lock, Lautstärke, Balance, Squelch, AGC mit AUTO und KAL, NB, NR, ANF und der DAX-Kanal.","x":86.0,"y":56.7},{"gruppe":"Rechte Seitenleiste","titel":"AGC-T: AUTO und KAL","text":"AUTO führt die AGC-Schwelle dem Rauschen nach, je Band. KAL misst das Rauschen einmal aus und stellt die Schwelle auf den Zielpegel. Dafür eine ruhige Stelle ohne Signal wählen.","x":90.5,"y":75.5},{"gruppe":"Rechte Seitenleiste","titel":"Filter","text":"Das blaue Bild zeigt Breite und Kanten des Filters. Mit den Tasten darunter wechselst du die Breite. Bei SSB bleibt die untere Kante stehen, bei AM und FM wächst der Filter nach beiden Seiten.","x":91.5,"y":87.8},{"gruppe":"Statuszeile","titel":"TNF, DVK, FDX","text":"Schalter für TNFs, den DVK-Speicher und Full Duplex.","x":5.5,"y":98.5},{"gruppe":"Statuszeile","titel":"Radio-Anzeige","text":"Name des Radios, Firmware, Station, RC-28-Lampe und Netzqualität.","x":47.0,"y":98.5},{"gruppe":"Statuszeile","titel":"Sendebereitschaft","text":"TX Ready, Versorgungsspannung, Temperatur und Uhrzeit (UTC).","x":92.5,"y":98.5}]</script>
+</section>
+
+</main>
+
+<footer class="fuss">
+  <p>xSDR64 von Mathias, DD5MD. FlexRadio ist eine Marke von FlexRadio Systems, Inc.</p>
+</footer>
+
+  <script src="javascripts/site.js" defer="defer"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<%# locals: ansicht %>
+<section class="ansicht" id="<%= ansicht.id %>" data-ansicht="<%= ansicht.id %>">
+  <header class="ansicht-kopf">
+    <h2><%= ansicht.titel %></h2>
+    <p><%= ansicht.beschreibung %></p>
+  </header>
+
+  <div class="buehne">
+    <div class="bild-scroll">
+    <figure class="bild" style="aspect-ratio: <%= ansicht.breite %> / <%= ansicht.hoehe %>">
+      <%= image_tag ansicht.bild, alt: ansicht.alt, width: ansicht.breite, height: ansicht.hoehe, loading: 'lazy' %>
+      <% ansicht.hotspots.each_with_index do |h, i| %>
+        <button type="button" class="hotspot" style="<%= hotspot_lage(h) %>"
+                data-nr="<%= i + 1 %>" data-gruppe="<%= h.gruppe %>"
+                aria-label="<%= h.titel %>"><span><%= i + 1 %></span></button>
+      <% end %>
+      <div class="blase" role="dialog" hidden>
+        <button type="button" class="blase-zu" aria-label="Schließen">×</button>
+        <p class="blase-gruppe"></p>
+        <h3 class="blase-titel"></h3>
+        <p class="blase-text"></p>
+      </div>
+    </figure>
+    </div>
+
+    <%# Liste der Hotspots: für Suchmaschinen, Tastatur und kleine Bildschirme %>
+    <aside class="liste">
+      <h3>Alle Punkte</h3>
+      <% hotspot_gruppen(ansicht).each do |g| %>
+        <h4><%= g %></h4>
+        <ul>
+          <% ansicht.hotspots.each_with_index do |h, i| %>
+            <% next unless h.gruppe == g %>
+            <li><button type="button" class="listenpunkt" data-nr="<%= i + 1 %>"><b><%= i + 1 %></b> <%= h.titel %></button></li>
+          <% end %>
+        </ul>
+        <% end %>
+    </aside>
+  </div>
+
+  <script type="application/json" class="hotspot-daten"><%= ansicht.hotspots.map { |h| { gruppe: h.gruppe, titel: h.titel, text: h.text, x: h.x, y: h.y } }.to_json %></script>
+</section>
